@@ -1,0 +1,49 @@
+#--General--
+threads: 5
+remove_resources: false # Still in beta, make sure to save your files anywhere else so nothing gets lost
+refund_on_start: false # Only enable this, if you want to refund all accounts on start
+force_pull_if_fails: true # Only enable this, if you experience fails on pulling promotion codes
+remove_already_purchased: true
+no_duplicates: true
+
+#--Proxy-- If you need help with proxies, contact me, I can recommend you good ones.
+proxyless: false
+speed: 1 # in seconds, if too many proxies time out, reduce this number. (1 should be good normally.)
+
+#--Virtual Credit Cards--
+max_vcc_uses: 2
+rotate_vccs: true # Dont change. Only set this to true, if your vcc has limits for transactions per minute!
+pro_changer: false # Dont change if you don't know what this is.
+
+#--Revolut--
+separate_otp: false # Set this to true if you want to queue the OTPs
+revolut_between_otp_time: 5 # The amount of seconds to wait for the next OTP
+proxyless_otp: false # You can enable it or not, however you want.
+
+#--Modules--
+purchaser: true
+refunder: true
+puller: true
+creator: false
+
+#--Creator--
+enable_imap: false
+custom_password: false # Use "password123" for custom password
+captcha_api: "capsolver"  # You can choose between capsolver or rockcaptcha
+captcha_key: "CAI-A9D2EE8893F3B8889DXXXXXXXXXXXXXX"
+
+#--Address--
+language_code: "tr-TR"
+city: "Istanbul"
+state: "34"
+postal: "34000"
+
+#--Captcha--
+capmonster_key: "a7de486addc6e551c04207abXXXXXXXX" # Get your Captcha Key from https://capmonster.cloud
+
+#--Failed Validation - Adding VCCs--
+retry: true
+cooldown: 900
+
+#--Tacking--
+price: 0 # put 0 if you don't want to use this feature.
